@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>obika chibuike | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="flex-box">
+      <!-- ---------------------------SECTION ONE---------------- -->
+      <div class="sect-one">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+
+      <!-- -----------------------SECTION TWO--------------------- -->
+      <div class="sect-two">
+        <div>
+          <p class="first-p">
+            Try it free 7 days <span class="alt">then $20/mo. thereafter</span>
+          </p>
+
+          <form action="#"  class="form" onclick= "return validation()">
+            <div class="box">
+              <input type="text" placeholder="First Name " class="name" />
+              <img src="./images/icon-error.svg" alt="" class="error e-name" />
+              <p class="para name-text"></p>
+            </div>
+
+            <div class="box">
+              <input
+                type="text"
+                placeholder="Last Name"
+                name="lastname"
+                class="lastname"
+              />
+              <img src="./images/icon-error.svg" alt="" class="error e-ln" />
+              <p class="para lastname-text"></p>
+            </div>
+
+            <div class="box">
+              <input type="email" placeholder="Email Address" class="email" />
+              <img src="./images/icon-error.svg" alt="" class="error e-em" />
+              <p class="para email-text"></p>
+            </div>
+
+            <div class="box">
+              <input type="password" placeholder="Password" class="password" />
+              <img src="./images/icon-error.svg" alt="" class="error e-pw" />
+              <p class="para password-code"></p>
+            </div>
+
+            <button type="button" class="btn" >Claim your free trial</button>
+
+            <p class="last-p">
+              By clicking the button, you are agreeing to our
+              <span class="terms">Terms and Services</span>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
